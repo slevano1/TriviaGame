@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+
+	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">	
+</head>
+<body>
+
+	<h1>Let's Play Trivia!</h1>
+		<!-- Timer -->
+	<h2 id="countdown"></h2>
+
+	<form id = "quiz" name = "quiz"> 
+		<p>Player Name:</p>
+		<input id = "textbox" type = "text" name = "PlayerName">
+		
+		<p>Which team did the Oakland A's beat to capture their last World Series victory?</p>
+		<input type="radio" id="mc" name="question1" value="Boston Red Sox">Boston Red Sox 
+		<input type="radio" id="mc" name="question1" value="Houston Astros">Houston Astros 
+		<input type="radio" id="mc" name="question1" value="San Francisco Giants">San Francisco Giants 
+		<input type="radio" id="mc" name="question1" value="Los Angeles Dodgers">Los Angeles Dodgers 
+
+		<p>Which band featured bikcering brothers within their lineup?</p>
+		<input type="radio" id="mc" name="question2" value="The Black Crowes">The Black Crowes 
+		<input type="radio" id="mc" name="question2" value="Oasis">Oasis 
+		<input type="radio" id="mc" name="question2" value="The Jesus and Mary Chain">The Jesus and Mary Chain 
+		<input type="radio" id="mc" name="question2" value="All of The Above">All of The Above 		
+		
+		<p>This animal walks like a giraffe and camel (both move their right feet first, then left).  No other animals walk this way.</p>
+		<input type="radio" id="mc" name="question3" value="Rhino">Rhino 
+		<input type="radio" id="mc" name="question3" value="Cat">Cat 
+		<input type="radio" id="mc" name="question3" value="Dog">Dog 
+		<input type="radio" id="mc" name="question3" value="Horse">Horse 	
+
+		<br>
+		<br>
+		<br>
+		<input id="button" type="button" value="Done!" onclick="check();">
+
+	</form>
+
+		
+	<div id='after_submit'>
+		<p id="message"></p>
+		<p id='number_correct'></p>
+		<img id="picture">
+	</div>
+
+
+	    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script src="Assets/javascript/app.js"></script>
+
+</body>
+</html>

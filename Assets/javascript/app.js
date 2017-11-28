@@ -5,7 +5,7 @@ countdown (10, 'countdown');
 
 function countdown (secs, elem) {
 	var element = document.getElementById(elem);
-	element.innerHTML = "Quiz Time Remaining : " + secs + " seconds";
+	element.innerHTML = "Time Remaining: " + secs + " seconds";
 	if (secs < 1 ) {
 		clearTimeout (timer);
 		element.innerHTML = "<h2>Time\'s Up!</h2>";
@@ -16,6 +16,11 @@ function countdown (secs, elem) {
 	var timer = setTimeout('countdown('+secs+',"'+elem+'")', 1000);
 }
 console.log(countdown); 
+
+
+
+
+
 
 //Quiz Complete Button//
 function check() {
@@ -37,7 +42,7 @@ var correct = 0;
 		}
 //Array//
 var messages = ["Great Job!", "You did...Okay.", "Not So Hot"];
-var pictures = ["Assets/images/min.gif","Assets/images/data.gif","Assets/images/gameover.gif"];
+var pictures = ["Assets/images/data.gif","Assets/images/min.gif","Assets/images/gameover.gif"];
 //Assigns a Score//
 var range;
 	if (correct<1) {
@@ -55,4 +60,13 @@ var range;
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct";
 	document.getElementById("picture").src = pictures[range];
 }
-console.log(check);
+
+
+  //Game Reset//
+  document.getElementById('reset').onclick = function() {
+ 
+  
+    
+    
+   
+  }

@@ -16,7 +16,11 @@
 	<form id = "quiz" name = "quiz"> 
 		<p>Player Name:</p>
 		<input id = "textbox" type = "text" name = "PlayerName">
-		
+		<!-- Player Greeting -->
+
+	
+
+		<!--Questions -->
 		<p>Which team did the Oakland A's beat to capture their last World Series victory?</p>
 		<input type="radio" id="mc" name="question1" value="Boston Red Sox">Boston Red Sox 
 		<input type="radio" id="mc" name="question1" value="Houston Astros">Houston Astros 
@@ -38,11 +42,13 @@
 		<br>
 		<br>
 		<br>
+		<!-- When Finished w/ Quiz -->
 		<input id="button" type="button" value="Done!" onclick="check();">
+		<button id="reset">Play Again</button>
 
 	</form>
 
-		
+    <!-- Quiz Results -->
 	<div id='after_submit'>
 		<p id="message"></p>
 		<p id='number_correct'></p>

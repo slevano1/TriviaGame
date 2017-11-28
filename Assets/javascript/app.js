@@ -3,17 +3,17 @@
 countdown (10, 'countdown');
 
 
-function countdown (secs, elem) {
+function countdown (seconds, elem) {
 	var element = document.getElementById(elem);
-	element.innerHTML = "Time Remaining: " + secs + " seconds";
-	if (secs < 1 ) {
+	element.innerHTML = "Time Remaining: " + seconds + " seconds";
+	if (seconds < 1 ) {
 		clearTimeout (timer);
 		element.innerHTML = "<h2>Time\'s Up!</h2>";
-		element.innerHTML += '<a href="#">Text Here</a>';
+		/*element.innerHTML += '<a href="#">Text Here</a>';*/
 	}
 
-	secs --;
-	var timer = setTimeout('countdown('+secs+',"'+elem+'")', 1000);
+	seconds --;
+	var timer = setTimeout('countdown('+seconds+',"'+elem+'")', 1000);
 }
 console.log(countdown); 
 
@@ -44,6 +44,7 @@ var correct = 0;
 var messages = ["Great Job!", "You did...Okay.", "Not So Hot"];
 var pictures = ["Assets/images/data.gif","Assets/images/min.gif","Assets/images/gameover.gif"];
 //Assigns a Score//
+
 var range;
 	if (correct<1) {
 		range = 2;

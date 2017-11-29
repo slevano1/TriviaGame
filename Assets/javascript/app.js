@@ -1,4 +1,3 @@
-
 //Countdown Timer//
 countdown (10, 'countdown');
 

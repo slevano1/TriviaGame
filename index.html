@@ -5,22 +5,43 @@
 	<meta charset="UTF-8">
 	<title>Trivia Game</title>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+	<!--Game Title & Timer-->
+<div class="container-fluid-fluid" id="main-section">
+	<div class="row">
+		<div class = "col-md-6">
+			<div class="jumbotron">		
+				<div class="header">
+					<h1>Let's Play Trivia!</h1>
+						<div id="clock">30 Seconds to Answer These Questions</div><br>
+						<div id="countdown"></div>
+				</div>
+			</div>	
+		</div>
+	
 
-	<h1>Let's Play Trivia!</h1>
-		<p class="intro"></p>
-		<!-- Timer -->
-	<h2 id="countdown"></h2>
+		
 
-	<form id = "quiz" name = "quiz"> 
-		<p>Player Name:</p>
-		<input id = "textbox" type = "text" name = "PlayerName">
+		
+			<div class = "col-md-5">	
+				<div class="jumbotron">	
+						<p id="greeting"></p>
+						<input type="text" id="playerName" placeholder="Your Name Here">
+						<button onclick="myFunction()">Submit</button>
+					
+				</div>
+			</div>
+		
+	</div>
+</div>
+		
 		<!-- Player Greeting -->
 
 	
-
+		<form id = "quiz" name = "quiz"> 
 		<!--Questions -->
 		<p>Which team did the Oakland A's beat to capture their last World Series victory?</p>
 		<input type="radio" id="mc" name="question1" value="Boston Red Sox">Boston Red Sox 
@@ -44,7 +65,7 @@
 		<br>
 		<br>
 		<!-- When Finished w/ Quiz -->
-		<input id="button" type="button" value="Done!" onclick="check();">
+		<input id="button" type="button" value="Done!" target="_blank" onclick="check();">
 		<button id="reset">Play Again</button>
 
 	</form>

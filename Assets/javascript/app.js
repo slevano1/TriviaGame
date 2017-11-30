@@ -1,5 +1,12 @@
+//Greet Player//
+function myFunction() {
+    var greet = document.getElementById('playerName').value;
+    document.getElementById('greeting').innerHTML = "Welcome " + greet + ". Hope you enjoy the quiz!";
+    
+}
+
 //Countdown Timer//
-countdown (10, 'countdown');
+countdown (30, 'countdown');
 
 
 function countdown (seconds, elem) {
@@ -15,10 +22,6 @@ function countdown (seconds, elem) {
 	var timer = setTimeout('countdown('+seconds+',"'+elem+'")', 1000);
 }
 console.log(countdown); 
-
-
-
-
 
 
 //Quiz Complete Button//

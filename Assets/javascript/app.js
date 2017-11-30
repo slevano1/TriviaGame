@@ -43,7 +43,7 @@ var correct = 0;
 			correct++;
 		}
 //Array//
-var messages = ["Great Job!", "You did...Okay.", "Not So Hot"];
+var messages = ["Great Job!", "Pretty Good!", "Oh No! You got 'em all wrong."];
 var pictures = ["Assets/images/data.gif","Assets/images/min.gif","Assets/images/gameover.gif"];
 //Assigns a Score//
 
@@ -66,7 +66,7 @@ var range;
 
 
   //Game Reset//
-  document.getElementById('reset').onclick = function() {
+    document.getElementById('reset').onclick = function() {
  
   
     

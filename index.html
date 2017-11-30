@@ -2,71 +2,71 @@
 <html lang="en-us">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Trivia Game</title>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
-	<!--Game Title & Timer-->
-<div class="container-fluid-fluid" id="main-section">
-	<div class="row">
-		<div class = "col-md-6">
-			<div class="jumbotron">		
-				<div class="header">
-					<h1>Let's Play Trivia!</h1>
-						<div id="clock">30 Seconds to Answer These Questions</div><br>
-						<div id="countdown"></div>
-				</div>
-			</div>	
-		</div>
 	
-
+	<title>Trivia Game</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+</head>
+<body id="picture">
+	<!--Game Title & Timer-->
+		
+	<div class="container">
+  		<div class="page-header">			
+			<h1 class="header">Let's Play Trivia!</h1>
+		</div>
+			<div id="clock">30 Seconds to Answer These Questions</div><br>
+			<div id="countdown"></div>
+	</div>
 		
 
-		
-			<div class = "col-md-5">	
-				<div class="jumbotron">	
+					<div>		
 						<p id="greeting"></p>
 						<input type="text" id="playerName" placeholder="Your Name Here">
-						<button onclick="myFunction()">Submit</button>
-					
-				</div>
-			</div>
+						<button type="button"  onclick="myFunction()" class="btn btn-info" value="Submit">Submit</button>
+					</div>
+			
 		
-	</div>
-</div>
+
 		
 		<!-- Player Greeting -->
-
+<div class="container">
+  <div class="jumbotron">
 	
 		<form id = "quiz" name = "quiz"> 
 		<!--Questions -->
-		<p>Which team did the Oakland A's beat to capture their last World Series victory?</p>
+		<p>Which team did the Oakland A's beat to capture their last World Series victory?
 		<input type="radio" id="mc" name="question1" value="Boston Red Sox">Boston Red Sox 
 		<input type="radio" id="mc" name="question1" value="Houston Astros">Houston Astros 
 		<input type="radio" id="mc" name="question1" value="San Francisco Giants">San Francisco Giants 
 		<input type="radio" id="mc" name="question1" value="Los Angeles Dodgers">Los Angeles Dodgers 
-
-		<p>Which band featured bikcering brothers within their lineup?</p>
+		</p>
+		<p>Which band featured bikcering brothers within their lineup?
 		<input type="radio" id="mc" name="question2" value="The Black Crowes">The Black Crowes 
 		<input type="radio" id="mc" name="question2" value="Oasis">Oasis 
 		<input type="radio" id="mc" name="question2" value="The Jesus and Mary Chain">The Jesus and Mary Chain 
 		<input type="radio" id="mc" name="question2" value="All of The Above">All of The Above 		
-		
-		<p>This animal walks like a giraffe and camel (both move their right feet first, then left).  No other animals walk this way.</p>
+		</p>
+		<p>This animal walks like a giraffe and camel (both move their right feet first, then left).  No other animals walk this way.
 		<input type="radio" id="mc" name="question3" value="Rhino">Rhino 
 		<input type="radio" id="mc" name="question3" value="Cat">Cat 
 		<input type="radio" id="mc" name="question3" value="Dog">Dog 
 		<input type="radio" id="mc" name="question3" value="Horse">Horse 	
+		</p>
+	</div>
+</div>	
+
 
 		<br>
-		<br>
-		<br>
+		
 		<!-- When Finished w/ Quiz -->
-		<input id="button" type="button" value="Done!" target="_blank" onclick="check();">
-		<button id="reset">Play Again</button>
+		
+		<button type="button"  onclick="check()" class="btn btn-info" value="Done!">Done!</button>
+		<button id="reset" class="btn btn-info" >Play Again</button>
+
 
 	</form>
 
@@ -82,7 +82,8 @@
 
 
 	    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Script -->
     <script src="Assets/javascript/app.js"></script>

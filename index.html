@@ -6,79 +6,96 @@
 	<title>Trivia Game</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-	
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+	
 	
 </head>
-<body id="picture">
-	<!--Game Title & Timer-->
-		
-	<div class="container">
-  		<div class="page-header">			
-			<h1 class="header">Let's Play Trivia!</h1>
-		</div>
-			<div id="clock">30 Seconds to Answer These Questions</div><br>
-			<div id="countdown"></div>
-	</div>
-		
+<body id="picture">	
 
-					<div>		
-						<p id="greeting"></p>
-						<input type="text" id="playerName" placeholder="Your Name Here">
-						<button type="button"  onclick="myFunction()" class="btn btn-info" value="Submit">Submit</button>
-					</div>
-			
+	<!--Game Title & Timer-->
+	<div class="container">
+		<div class="page-header">
+		    <h1>Trivia Time!</h1>    
+		    <input type="text" id="playerName" placeholder="Your Name Here">
+						<button type="button"  onclick="myFunction()" class="btn btn-info" value="Submit">Submit</button>  
+		</div>  
+			<div class="page-header-right">
+				<p id="greeting"></p>
+				<p id="countdown">30 Seconds to Answer These Questions</p><br>      
+				  <!--<div id="countdown"></div> -->
+
+			</div>
 		
+	</div>	
 
 		
 		<!-- Player Greeting -->
 <div class="container">
-  <div class="jumbotron">
+ 
+	<div class="jumbotron">
 	
-		<form id = "quiz" name = "quiz"> 
+	<form id = "quiz" name = "quiz"> 
 		<!--Questions -->
-		<p>Which team did the Oakland A's beat to capture their last World Series victory?
+		<h4>1. Which team did the Oakland A's beat to capture their last World Series victory?</h4>
 		<input type="radio" id="mc" name="question1" value="Boston Red Sox">Boston Red Sox 
 		<input type="radio" id="mc" name="question1" value="Houston Astros">Houston Astros 
 		<input type="radio" id="mc" name="question1" value="San Francisco Giants">San Francisco Giants 
 		<input type="radio" id="mc" name="question1" value="Los Angeles Dodgers">Los Angeles Dodgers 
-		</p>
-		<p>Which band featured bikcering brothers within their lineup?
+		<br>
+		<h4>2. Which band featured bikcering brothers within their lineup?</h4>
 		<input type="radio" id="mc" name="question2" value="The Black Crowes">The Black Crowes 
 		<input type="radio" id="mc" name="question2" value="Oasis">Oasis 
 		<input type="radio" id="mc" name="question2" value="The Jesus and Mary Chain">The Jesus and Mary Chain 
 		<input type="radio" id="mc" name="question2" value="All of The Above">All of The Above 		
-		</p>
-		<p>This animal walks like a giraffe and camel (both move their right feet first, then left).  No other animals walk this way.
+		<br>
+		<h4>3. This animal walks like a giraffe and camel (both move their right feet first, then left).  No other animals walk this way.</h4>
 		<input type="radio" id="mc" name="question3" value="Rhino">Rhino 
 		<input type="radio" id="mc" name="question3" value="Cat">Cat 
 		<input type="radio" id="mc" name="question3" value="Dog">Dog 
 		<input type="radio" id="mc" name="question3" value="Horse">Horse 	
-		</p>
+		<br>
+		<h4>4. This traditionally Spanish custard dessert is topped with caramel sauce.</h4>
+		<input type="radio" id="mc" name="question4" value="Leche Frita">Leche Frita 
+		<input type="radio" id="mc" name="question4" value="Arroz con Leche">Arroz con Leche 
+		<input type="radio" id="mc" name="question4" value="Flan">Flan
+		<input type="radio" id="mc" name="question4" value="Magdalenas">Magdalenas 	
+		<br>
+		<h4>5. In what year was the first Star Wars movie released?</h4>
+		<input type="radio" id="mc" name="question5" value="1977">1977 
+		<input type="radio" id="mc" name="question5" value="1983">1983
+		<input type="radio" id="mc" name="question5" value="1980">1980
+		<input type="radio" id="mc" name="question5" value="1979">1979
+		<br>
+
+
 	</div>
-</div>	
+
 
 
 		<br>
 		
 		<!-- When Finished w/ Quiz -->
-		
+	<div class="Recap">
 		<button type="button"  onclick="check()" class="btn btn-info" value="Done!">Done!</button>
 		<button id="reset" class="btn btn-info" >Play Again</button>
-
+	</div>
 
 	</form>
-
+</div>	
 	<p id="win">
 	<p id="lost"></p>
 
     <!-- Quiz Results -->
-	<div id='after_submit'>
-		<p id="message"></p>
-		<p id='number_correct'></p>
-		<img id="picture">
+<div class="container"> 
+	<div class="jumbotron">   
+		<div id='submit_answers'>
+			<p id="message"></p>
+			<p id='number_correct'>
+			<img id="picture"></p>
+		</div>
 	</div>
+</div>
 
 
 	    <!-- jQuery -->

@@ -1,9 +1,59 @@
 
 body {
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	background: url(../images/stage.jpg);
+	
 }
 
-#after_submit {
+h1 {
+	border-top: 5px;
+	color: #ffffff;
+	text-shadow: 3px 3px #222222;
+	margin: 10px 0 20px;
+
+}
+
+#submit_answers {
 	visibility: hidden;
+}
+
+#mc {
+	font-size: 10px;
+}
+
+#countdown {
+	font-size: 26px;
+	color: #ffffff;
+	text-shadow: 3px 3px #222222;
+	font: bold;
+}
+
+.page-header {
+	
+	margin: 10px 0 20px;
+	
+    text-align: center;
+}
+
+.page-header-right {
+	text-align: center;
+}
+
+#greeting {
+	text-align: center;
+	font-size: 26px;
+	color: #ffffff;
+	text-shadow: 3px 3px #222222;
+	font: bold;
+}
+
+.jumbotron {
+	text-align: center;
+	box-shadow: 10px 10px 5px #222222;
+
+}
+
+#reset {
+	text-align: center;
 }
 

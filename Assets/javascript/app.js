@@ -31,6 +31,8 @@ function check() {
 var question1 = document.quiz.question1.value;
 var question2 = document.quiz.question2.value;
 var question3 = document.quiz.question3.value;
+var question4 = document.quiz.question4.value
+var question5 = document.quiz.question5.value
 var correct = 0;
 
 		if (question1 === 'San Francisco Giants') {
@@ -42,34 +44,42 @@ var correct = 0;
 		if (question3 === 'Cat') {
 			correct++;
 		}
+		if (question4 === 'Flan') {
+			correct++;
+		}
+		if (question5 === '1977') {
+			correct++;
+		}
+
+
+		
 //Array//
 var messages = ["Great Job!", "Pretty Good!", "Oh No! You got 'em all wrong."];
 var pictures = ["Assets/images/data.gif","Assets/images/min.gif","Assets/images/gameover.gif"];
 //Assigns a Score//
 
+
 var range;
 	if (correct<1) {
 		range = 2;
 	}
-	if (correct>0 && correct<3) {
+	if (correct>0 && correct<5) {
 		range = 1;
 	}
-	if (correct>2) {
+	if (correct>4) {
 		range = 0;
 	}
+	console.log(range);
 
-	document.getElementById("after_submit").style.visibility = 'visible';
+	document.getElementById("submit_answers").style.visibility = 'visible';
 	document.getElementById("message").innerHTML = messages[range];
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct";
 	document.getElementById("picture").src = pictures[range];
+
 }
 
 
   //Game Reset//
     document.getElementById('reset').onclick = function() {
  
-  
-    
-    
-   
   }
